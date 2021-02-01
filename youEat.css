@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+      body::-webkit-scrollbar {
+    width: 0.8em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(221, 9, 9);
+    outline: 1px solid slategrey;
+  }
+  
+
+
+  /*****************ABUJA Locationnnnnnnnnnnnn*/
+  
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #dd9700;
+    color: white;
+  }
+  
+  
+  /*****************LAGOS Locationnnnnnnnnnnnn*/
+  
+  .tpnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .tpnav #myLnks {
+    display: none;
+  }
+  
+  
+  .tpnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .tpnav a.con {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .actve {
+    background-color: #dd9700;
+    color: white;
+  }
+  
+
+
+
+
+
+
+  /*****************PH Locationnnnnnnnnnnnn*/
+  
+  .phtpnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .phtpnav #phmyLnks {
+    display: none;
+  }
+  
+  
+  .phtpnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+ 
+  .phtpnav a.phcon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+
+  .phactve {
+    background-color: #dd9700;
+    color: white;
+  }
+  
+
+
+
+  /*****************OWERRI  Locationnnnnnnnnnnnn*/
+  
+  .ottpnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .ottpnav #otmyLnks {
+    display: none;
+  }
+  
+  
+  .ottpnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+ 
+  .ottpnav a.otcon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+
+  .otactve {
+    background-color: #dd9700;
+    color: white;
+  }
+
+
+
+
+
+
+  
+  /*****************ABIA  Locationnnnnnnnnnnnn*/
+  
+  .abtpnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .abtpnav #abmyLnks {
+    display: none;
+  }
+  
+  
+  .abtpnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+ 
+  .abtpnav a.abcon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+
+  .abactve {
+    background-color: #dd9700;
+    color: white;
+  }
+  
+
+
+  /************************************************ DASHBOARD *****************/
+
+  .Newusers{
+    background: linear-gradient(to right, #11998e 0%, #38ef7d 100%);
+  }
+
+  .Newuser{
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); 
+  }
+
+ .Newuse{
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+ }
+ .Newus{
+    background: linear-gradient(to right, #e65c00, #f9d423); 
+ }
+
+ .boardarea{
+     width: 96%;
+ }

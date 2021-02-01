@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>A sharwama procurent site</title>
+    <script src="https://kit.fontawesome.com/ebf196a24d.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    body::-webkit-scrollbar {
+  width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 9, 9);
+  outline: 1px solid slategrey;
+}
+</style>
+
+<body class="bg-blue-50">
+    <div class="fade-in w-full h-screen bg-white m-0 p-0 bg-cover bg-no-repeat" style="background:url('./images/top.jpeg')">
+    <div class="w-full h-screen bg-black opacity-70 m-0 p-0">
+        
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+
+            <nav class="flex flex-col sm:flex-col md:flex-row justify-between items-center pt-8">
+                    <div class=" logo texts"data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                    <h1 class="text-4xl text-white animate-bounce">youEAT</h1>
+            </div>
+            <ul class="flex flex-row justify-center items-center text-white cursor-pointer "data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                        <li><a class="text-yellow-500 px-4" href ="youeat.html">Home</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href ="About.html">About us</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="#">Locations</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="#menu">Menu</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="login.html">Login</a></li>
+                       
+                </ul>
+        </nav>
+
+        <showcase class="flex sm:flex-row flex-col justify-between items-center gap-2 mt-16">
+                <div class=""data-aos="fade-right" data-aos-duration="3000">
+                    <h1 class="sm:text-6xl text-4xl sm:text-left text-center text-white mb-4 opacity-100 font-extrabold">Tasty and tantalizing sharwama for your taste knowing taste bud</h1>
+                    <h3 class="headertext sm:text-2xl text-1xl text-center text-white font-light opacity-100">We take your orders trimmed according to your taste and
+                        deliver instantly
+                    </h3>
+                    <h5 class="text-center text-1xl text-white font-light">Starting at only <span class="animate-spin text-red-700 font-bold">$2!</span></h5>
+                    <button class="bg-yellow-400 p-2 px-4 mt-4 text-black-700 font-bold hover:bg-yellow-700 focus:outline-none animate-pulse">ORDER NOW!</button>
+                </div>
+                <div class="w-7/12">
+                    <h1>FOOd CHALLENGE HERE!</h1>
+                </div>
+        </showcase>
+      </div>
+    </div>
+    </div>
+
+    <!--------------------------------------- MENU AREA ------------------------------------------>
+    <section class="menu ">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12">
+            <h1 class="sm:text-4xl text-3xl font-bold text-black text-center w-3/6 m-auto mt-32 mb-6"data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500">Let's Take Your Orders</h1>
+
+            <div class="w-14 h-1 bg-yellow-600 m-auto mb-12 "data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"></div>
+
+            <h3 class=" text-1xl text-black mb-32 text-yellow-700" data-aos="fade-up"
+            data-aos-duration="2500">Looking for that mouth watering sharwama that can quench your craving? We've got you! 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam autem similique at numquam nihil dicta 
+                exercitationem assumenda unde voluptatibus, vel perferendis doloribus ea ullam 
+                ipsam veritatis ex excepturi harum. consequuntur magni dolores eos qui ratione voluptatem non numquam eius modi tempora incidunt 
+                ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis </h3>
+
+
+            <h2 id="menu" class="sm:text-4xl text-3xl font-bold text-black text-center w-3/6 m-auto mb-6"data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500">Explore Our Menu</h2>
+
+            <div class="w-14 h-1 bg-yellow-600 m-auto mb-12 "data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"></div>
+            <div class="types of sharwama sm:text-1xl text-xs flex justify-center items-center gap-2 mb-16 -mr-2.5 ">
+                <h1 class="sm:border-4 border-1 rounded border-yellow-600 sm:border-double border text-yellow-600 p-2 hover:bg-yellow-700 hover:text-white transition duration-500 ease-in "data-aos="fade-up-left">ALL</h1>
+                <h1 class="sm:border-4 border-1 rounded border-yellow-600 sm:border-double border text-yellow-600 p-2 hover:bg-yellow-700 hover:text-white transition duration-500 ease-in "data-aos="fade-up-right">CHICKEN GRILL</h1>
+                <h1 class="sm:border-4 border-1 rounded border-yellow-600 sm:border-double border text-yellow-600 p-2 hover:bg-yellow-700 hover:text-white transition duration-500 ease-in "data-aos="flip-left">BEEF GRILL</h1>
+                <h1 class="sm:border-4 border-1 rounded border-yellow-600 sm:border-double border text-yellow-600 p-2 hover:bg-yellow-700 hover:text-white transition duration-500 ease-in "data-aos="fade-up-left">MIXED GRILL</h1>
+                <h1 class="sm:border-4 border-1 rounded border-yellow-600 sm:border-double border text-yellow-600 p-2 hover:bg-yellow-700 hover:text-white transition duration-500 ease-in "data-aos="fade-up-right">EXCLUSIVE GRILL</h1>
+            </div>
+
+            <div class="sharwama array grid grid-cols-1 gap-6 gap-y-20 lg:grid-cols-2 sm:grid-cols-1 text-xs sm:text-base">
+                <!------  1  -->
+                <div class="flexer flex justify-center items-center gap-2 " data-aos="fade-right">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/another.jpg">
+                    </div>
+                    <div class="sharwama textslg:flex-shrink-1">
+                        <h2 class="border-b-2 border-dotted border-gray-400" style="font-family: 'Lobster', cursive">Goat Lerri <span class=" tracking-widest text-yellow-700 ml-16">$2.3</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem eius omnis qui aut nostrum consequuntur 
+                            praesentium a sint atque sapiente delectus commodi, labore id?</h3>
+                    </div>
+                </div>
+                <!----  2  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-left">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full h-full">
+                        <img src="./images/no2.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400" style="font-family: 'Lobster', cursive">Crunchy Hulk <span class=" tracking-widest text-yellow-700 ml-16">$2.7</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum maxime sint provident
+                             veriis odit modi! Culpa sapiente soluta obcaecati aperiam.</h3>
+                    </div>
+                </div>
+                 <!----  3  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-right">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/no3.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400" style="font-family: 'Lobster', cursive">Chicken Puree <span class=" tracking-widest text-yellow-700 ml-16">$4.3</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempora? Adipisci nihil deserunt, repellat esse 
+                            officiis aum, nulla voluptatibus, aliquam explicabo est. Illo.</h3>
+                    </div>
+                </div>
+                 <!----  4  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-left">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/no4.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400 "style="font-family: 'Lobster', cursive">Sweet One <span class=" tracking-widest text-yellow-700 ml-16">$2.5</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat vo
+                            doloremque eveniet ad voluptates rem ipsa eligendi sint. Illum, nostrum!</h3>
+                    </div>
+                </div>
+                <!----  5  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-right">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full ">
+                        <img src="./images/no5.jpg" class="h-50">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">Beef Challange <span class=" tracking-widest text-yellow-700 ml-16">$2.9</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quidem eius omnis qui aut nostrum consequuntur 
+                            praesentium a sint atqueommodi, labore id?</h3>
+                    </div>
+                </div>
+                <!----  6  -->
+                <div class="flexer flex justify-center items-center gap-2 "data-aos="fade-left">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/no6.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">Kings bite <span class=" tracking-widest text-yellow-700 ml-16">$6.2</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor enim sunt facilis illum voluptate obcaecati, ipsum minus 
+                            ipsuia, voluptatem quae!</h3>
+                    </div>
+                </div>
+                <!----  7  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-right">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/no7.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">Lovers Special <span class=" tracking-widest text-yellow-700 ml-16">$11.0</span><span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+                            excepa harum, eveniet nisi. Beatae, praesentium! Veniam eos reprehenderit, 
+                             explicabo beatae.</h3>
+                    </div>
+                </div>
+                <!----  8  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-left">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/metush.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">Metush <span class=" tracking-widest text-yellow-700 ml-16">$9.3</span> <span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae debitis minima,
+                             e enim vel molestias ad, beatae alias mollitia.</h3>
+                    </div>
+                </div>
+                <!----  9  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-right">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/no9.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">YE! Specials <span class=" tracking-widest text-yellow-700 ml-16">$12.1</span> <span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur distinctio
+                             cupiditate possim obcaecati amet omnis natus.</h3>
+                    </div>
+                </div>
+                <!----  10  -->
+                <div class="flexer flex justify-center items-center gap-2"data-aos="fade-left">
+                    <div class="sharwama pics border-4 rounded border-yellow-600 w-full">
+                        <img src="./images/shar.jpg">
+                    </div>
+                    <div class="sharwama texts">
+                        <h2 class="border-b-2 border-dotted border-gray-400"style="font-family: 'Lobster', cursive">The Em_licks <span class=" tracking-widest text-yellow-700 ml-16">$7.3</span> <span class="cursor-pointer animate-pulse border-4 bg-yellow-700 text-white rounded border-yellow-600 ml-16 font-sans hover:bg-white hover:text-yellow-600 transition duration-500 ease-in">Order</span></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae debitis nisi
+                             maxime aliquid sunt, ipsa vitae quam, impedit nihil id voluptas ab!</h3>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+    <section class="Featured">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+        <h1 class="sm:text-4xl text-3xl font-bold text-black text-center w-3/6 m-auto mt-40 mb-4" data-aos="fade-right">Featured</h1>
+        <div class="w-14 h-1 bg-yellow-600 m-auto mb-8 " data-aos="fade-left"></div>
+        <h2 class="text-1xl text-yellow-600 text-center sm:w-3/6 w-5/6 m-auto mt-2 mb-16" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus vel, fugit dolorum in laborum.</h2>
+        
+
+        <div class="flexer flex justify-center items-center gap-2 lg:flex-row flex-col text-xs sm:text-base">
+            <div class="sharwama pics border-4 rounded border-yellow-600 lg:w-full w-80 h-96 sm:flex-wrap hover:text-white transition duration-500 ease-in hover:bg-yellow-600"data-aos="zoom-in-right">
+                <img src="./images/f1.jpg" class="h-64">
+                <p class="px-4 text-yellow-600 font-bold mt-4 hover:text-white">Kadri Porarara</p>
+                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+            </div>
+            <div class="sharwama pics border-4 rounded border-yellow-600 lg:w-full w-80 h-96 hover:text-white transition duration-500 ease-in hover:bg-yellow-600"data-aos="zoom-out">
+                <img src="./images/f2.jpg" class="h-64">
+                <h1 class="px-4 text-yellow-600 font-bold mt-4 hover:text-white">London Saur</h1>
+                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+            </div>
+            <div class="sharwama pics border-4 rounded border-yellow-600 lg:w-full w-80 h-96 hover:text-white transition duration-500 ease-in hover:bg-yellow-600"data-aos="zoom-out-down">
+                <img src="./images/f3.jpg" class="h-64">
+                <h1 class="px-4 text-yellow-600 font-bold mt-4 hover:text-white">Hungry Happy</h1>
+                <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+            </div>
+        
+        </div>
+    </section>
+
+
+    <!------------- Customer Questions-->
+    <section class="customers">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+            <h1 class="sm:text-4xl text-3xl font-bold text-black text-center w-3/6 m-auto mt-40 mb-4" data-aos="fade-left">We Want To Know Your Thoughts</h1>
+            <div class="w-14 h-1 bg-yellow-600 m-auto mb-8 " data-aos="fade-right"></div>
+            <h2 class="text-1xl text-yellow-600 text-center w-5/6 m-auto mt-2 mb-16" data-aos="fade-left">We always want to know what you think and ways we can improve to serve you, our dear customers better. Are we missing out on something? let us know here</h2>
+            <form class="grid grid-cols-2 gap-6 gap-y-20" action="">
+                <!-- <p>Name</p> -->
+                <input class="focus:outline-none placeholder-opacity-50 placeholder-yellow-600 py-2 rounded border-2  border-yellow-600" type="text" name="user" placeholder="Input your name" data-aos="fade-right">
+                <!-- <p>Email</p> -->
+                <input class="focus:outline-none placeholder-opacity-50 placeholder-yellow-600 rounded border-2  border-yellow-600" type="Email" name="Mail" placeholder="Input your Email" data-aos="fade-left">
+                <!-- <p>Your Message</p> -->
+                <input class="focus:outline-none placeholder-opacity-50 placeholder-yellow-600 col-span-2 pb-20 rounded border-2  border-yellow-600"  type="text" name="user" placeholder="Share your thoughts with us" data-aos="fade-up"
+                data-aos-duration="2000">
+            </form>
+            <button class="animate-spin bg-yellow-400 p-2 px-4 hover:bg-yellow-700 focus:outline-none font-bold text-black mt-12">Send Message</button>
+
+    </div>
+    </section>
+
+    <section class="Footer bg-gray-700 h-auto mt-20">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+        
+            <div class="lg:flex lg:justify-between lg:items-center lg:gap-2 grid grid-cols-3 text-xs lg:text-base sm:text-base">
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">ALL LOCATIONS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">DEALS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">GIFT CARDS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">CONTACT US</a></li>
+            </div>
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">FRANCHISING</a></li>
+                <li><a class="hover:text-yellow-600" href="#">ABOUT</a></li>
+                <li><a class="hover:text-yellow-600" href="#">CAREERS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">NEW SYLES</a></li>
+            </div>
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">PRIVACY POLICY</a></li>
+                <li><a class="hover:text-yellow-600" href="#">ACCESSIBILITY</a></li>
+                <li><a class="hover:text-yellow-600" href="#">TERMS & CONDITIONS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">SUPPLY CHAIN</a></li>
+            </div>
+            <div class="grid grid-cols-1 mt-12 col-span-3 row-end-auto text-center">
+                <div class="iconss flex justify-around items-center gap-2 text-2xl text-white ">
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-facebook"></i></h1>
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-instagram"></i></h1 >
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-twitter"></i></h1>
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-linkedin"></i></h1>
+                </div>
+                <div class="lg:w-80 w-full h-1 bg-white m-auto my-4"></div>
+                <div class="apparea flex justify-between items-center gap-2">
+                    <h1 class="text-white">Download Our App</h1>
+                    <h1 class="cursor-pointer hover:bg-yellow-600 rounded text-white border border-yellow-600 py-2 px-4"><i class="fab fa-apple"></i>App store</h1>
+                    <h1 class="cursor-pointer hover:bg-yellow-600 rounded text-white border border-yellow-600 py-2 px-4"><i class="fab fa-google-play">Google play</i></h1>
+                </div>
+            </div>
+
+           </div>
+
+            <h1 class="text-center text-white opacity-40 mt-16">Copyrights &copy; www.emcodes.com, 2021 | Designed by Em_codes</h1>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
+      </script>
+</body>
+</html>

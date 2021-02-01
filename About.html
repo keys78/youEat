@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>A sharwama procurent site</title>
+    <script src="https://kit.fontawesome.com/ebf196a24d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    body::-webkit-scrollbar {
+  width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 9, 9);
+  outline: 1px solid slategrey;
+}
+.koko {
+  width: 450px;
+  height: 450px;
+  background: url('./aboutimages/about.jpg') center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  animation: clips 3s ease infinite;
+}
+
+@keyframes clips {
+  50% {
+clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
+  }
+}
+</style>
+
+<body class="bg-blue-50">
+    <div class="w-full h-screen bg-white m-0 p-0 bg-cover bg-no-repeat" style="background:url('./aboutimages/us_66.jpg') center no-repeat">
+    <div class="w-full h-screen bg-black opacity-70 m-0 p-0">
+        
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+
+            <nav class="flex flex-col sm:flex-col md:flex-row justify-between items-center pt-8">
+                    <div class=" logo texts"data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                    <h1 class="text-4xl text-white animate-bounce">youEAT</h1>
+            </div>
+            <ul class="flex flex-row justify-center items-center text-white cursor-pointer "data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                        <li><a class="px-4 hover:text-yellow-500" href ="youeat.html">Home</a></li>
+                        <li><a class="px-4 text-yellow-500" href ="About.html">About us</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="location.html">Locations</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="#">Menu</a></li>
+                        <li><a class="px-4 hover:text-yellow-500" href="login.html">Login</a></li>
+                       
+                </ul>
+        </nav>
+
+
+
+        <div class="flex justify-around items-center">
+
+               <div> 
+                    <div class="koko w-12/12 h-3/6 bg-white opacity-100 m-0 p-0 skew-x-12">
+                            <h1 class="sm:text-6xl text-4xl sm:text-center pt-52 text-center text-white mb-4 opacity-100 font-extrabold">About Us</h1>
+                    </div>
+               </div>
+
+            <div class="w-5/12 text-2xl text-white"style="font-family: 'Dancing Script', cursive;">
+                <p> “youEat is one of the most tasty and reliable smallchops industryin the world amet consectetur adipisicing elit. 
+                    Officiis delectus dicta earum deleniti, veritatis illum rerum quidem
+                     fugiat eius nesciunt magni cupiditate tempore quod quisquam est obcaecati 
+                     dolorum incidunt vero!”</p>
+                     <p class="mt-12"> “Here at youEat we have set standards that guilds our timeline, dolor sit, amet consectetur adipisicing elit. 
+                        Officiis delectus dicta earum deleniti, veritatis illum rerum quidem
+                         fugiat eius nesciunt magni cupiditate tempore quod quisquam est obcaecati 
+                         dolorum incidunt vero!”</p>
+            </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <!--------------------------------------- ABOUT US ------------------------------------------>
+
+    <div class="Aboutus text mt-16 mb-40">
+    <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+        
+        <div class="flex justify-center items-center gap-6 shadow-lg mb-12">
+
+            <div class="w-4/12 our mission ">
+                    <h1 class="text-center text-3xl w-full text-white  bg-yellow-700">Our Mission</h1>
+                    <p class="text-gray-500 pb-12">Our sole mission is service, its key to Lorem ipsum dolor sit amet consectetur adipisicing eli
+                    t. Porro, odit. Sunt consequatur aut architecto totam delectus optio. In quisquam, quasi aperiam consequuntur
+                    laborum voluptates, consequatur dolorem quo nulla, maiores mollitia?</p>
+            </div>
+
+             <div class="w-4/12 self-end our vision mt-20">
+                    <h1 class="text-center text-3xl w-full text-white  bg-black">Our Vision</h1>
+                    <p class="text-gray-500 pb-12">The goal is to see every valued customer smile with a bite of youEat Lorem ipsum dolor sit amet consectetur adipisicing eli
+                    t. Porro, odit. In quisquam, quasi aperiam consequuntur
+                    laborum voluptates, consequatur dolorem quo nulla, maiores mollitia?</p>
+             </div>
+        </div>
+
+
+        <div class="flex justify-center items-center gap-6 shadow-lg gap-6">
+            <div class="w-4/12 our mission">
+                <h1 class="text-center text-3xl text-white  bg-yellow-700">Core Values</h1>
+                <p class="text-gray-500 pb-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eum optio,
+                    vero veniam nesciunt quo totam deserunt facilis, voluptate error dolore soluta nulla odit labor
+                    um fuga nihil eveniet earum? Incidunt?</p>
+                </div>
+    
+                <div class="w-4/12 our vision mt-20">
+                    <h1 class="text-center text-3xl w-full text-white  bg-black">Annual insights</h1>
+                    <p class="text-gray-500 pb-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sapiente d
+                        electus corporis odio sed consequatur ab ea eum voluptas praesentium a itaque laudantium repella
+                        t aspernatur temporibus, voluptatibus quasi debitis neque!</p>
+                    </div>
+        </div>
+
+      </div>
+    </div>
+   
+<!----------------------- THE TEAM ------------------------->
+
+    <div class="Team ">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+
+            <h1 class="sm:text-4xl text-3xl font-bold text-black text-center w-3/6 m-auto mt-32 mb-6"data-aos="fade-left"data-aos-easing="linear" data-aos-duration="1500">Meet The Team</h1>
+
+            <div class="w-14 h-1 bg-yellow-600 m-auto mb-12 "data-aos="fade-left"data-aos-easing="linear"data-aos-duration="1500"></div>
+                
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="col-span-2">
+                        <h1 class="text-3xl text-gray-700 font-bold" style="font-family: 'Dancing Script', cursive;">Krapa Vikolov</h1>
+                        <h2 class="text-2xl text-yellow-500">Head Nutritionist</h2>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur blanditiis 
+                        aspernatur eaque libero tempore saepe, dicta facere placeat nihil natus? Esse beatae voluptatibus
+                        tempore error omnis expedita culpa soluta.</p>
+                    </div>
+                <div class="image">
+                    <img src="./aboutimages/p1.jpg" style="border-radius: 60px;">
+                </div>
+
+
+                <div class="image">
+                    <img src="./aboutimages/p2.jpg" style="border-radius: 60px;">
+                </div>
+
+                    <div class="col-start-2 col-span-2">
+                        <h1 class="text-3xl text-gray-700 font-bold" style="font-family: 'Dancing Script', cursive;">Mirovsi klose</h1>
+                        <h2 class="text-2xl text-yellow-500">Kitchen Mastery</h2>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur blanditiis 
+                        aspernatur eaque libero tempore saepe, dicta facere placeat nihil natus? Esse beatae voluptatibus
+                        tempore error omnis expedita culpa soluta.</p>
+                    </div>
+               
+
+
+        </div>
+        
+        
+        
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="Footer bg-gray-700 h-auto mt-40">
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+        
+            <div class="lg:flex lg:justify-between lg:items-center lg:gap-2 grid grid-cols-3 text-xs lg:text-base sm:text-base">
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">ALL LOCATIONS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">DEALS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">GIFT CARDS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">CONTACT US</a></li>
+            </div>
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">FRANCHISING</a></li>
+                <li><a class="hover:text-yellow-600" href="#">ABOUT</a></li>
+                <li><a class="hover:text-yellow-600" href="#">CAREERS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">NEW SYLES</a></li>
+            </div>
+            <div class="text-white mt-16 list-none leading-loose">
+                <li><a class="hover:text-yellow-600" href="#">PRIVACY POLICY</a></li>
+                <li><a class="hover:text-yellow-600" href="#">ACCESSIBILITY</a></li>
+                <li><a class="hover:text-yellow-600" href="#">TERMS & CONDITIONS</a></li>
+                <li><a class="hover:text-yellow-600" href="#">SUPPLY CHAIN</a></li>
+            </div>
+            <div class="grid grid-cols-1 mt-12 col-span-3 row-end-auto text-center">
+                <div class="iconss flex justify-around items-center gap-2 text-2xl text-white ">
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-facebook"></i></h1>
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-instagram"></i></h1 >
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-twitter"></i></h1>
+                <h1 class="hover:text-yellow-600 cursor-pointer"><i class="fab fa-linkedin"></i></h1>
+                </div>
+                <div class="lg:w-80 w-full h-1 bg-white m-auto my-4"></div>
+                <div class="apparea flex justify-between items-center gap-2">
+                    <h1 class="text-white">Download Our App</h1>
+                    <h1 class="cursor-pointer hover:bg-yellow-600 rounded text-white border border-yellow-600 py-2 px-4"><i class="fab fa-apple"></i>App store</h1>
+                    <h1 class="cursor-pointer hover:bg-yellow-600 rounded text-white border border-yellow-600 py-2 px-4"><i class="fab fa-google-play">Google play</i></h1>
+                </div>
+            </div>
+
+           </div>
+
+            <h1 class="text-center text-white opacity-40 mt-16">Copyrights &copy; www.emcodes.com, 2021 | Designed by Em_codes</h1>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
+      </script>
+</body>
+</html>

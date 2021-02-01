@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>A sharwama procurent site</title>
+    <script src="https://kit.fontawesome.com/ebf196a24d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    body::-webkit-scrollbar {
+  width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 9, 9);
+  outline: 1px solid slategrey;
+}
+
+
+/*************************************** FOR SIDEBAR *******************/
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgb(158, 108, 0); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  list-style-type: none;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color:orange;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+
+<body class="bg-blue-50">
+    <div class="w-full h-screen bg-white m-0 p-0 bg-cover bg-no-repeat" style="background:url('./aboutimages/logincover.jpg') center no-repeat">
+    <div class="w-full h-screen bg-black opacity-90 m-0 p-0">
+        
+        <div class="container w-11/12 lg:w-9/12 m-auto sm:w-11/12 m-auto">
+
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a class="px-4 hover:text-yellow-700" href ="youeat.html">Home</a></li>
+                <li><a class="px-4 hover:text-yellow-700" href ="About.html">About us</a></li>
+                <li><a class="px-4 hover:text-yellow-700" href="#">Locations</a></li>
+                <li><a class="px-4 hover:text-yellow-700" href="#">Menu</a></li>
+              </div>
+              
+              <div id="main"class="flex justify-between items-center">
+                <div class=" logo texts"data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+            <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                <h1 class="text-4xl text-white animate-bounce">youEAT</h1>
+        </div>
+
+                <div>
+                     <button class="openbtn text-2xl bg-black" onclick="openNav()" data-aos="fade-left"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500">&#9776;</button>
+                </div>
+              </div>
+        
+
+            <!-- <nav class="flex flex-col sm:flex-col md:flex-row justify-between items-center pt-8">
+                    <div class=" logo texts"data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                    <h1 class="text-4xl text-white animate-bounce">youEAT</h1>
+            </div>
+            <ul class="flex flex-row justify-center items-center text-white cursor-pointer "data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                       <li class="text-2xl"><i class="fa fa-bars"></i></li>
+                       
+                </ul>
+        </nav> -->
+
+
+        <!--------------------------------------- SIGN UP PANEL ------------------------------------------>
+
+
+                <div class="w-7/12 rounded bg-gray-200 flex justify-between items-center w-6/12 m-auto text-center">
+                        
+                    <div class="text-white w-5/12 h-96 bg-yellow-600 rounded-l-sm pt-12">
+                        <h1 class="text-2xl">Hey there!</h1>
+                        <h2>Be part of our amazing family and eat great chops with us</h2>
+
+                        <img class="w-40 mt-16 ml-8" src="undraw_Traveling_re_weve.svg">
+                    </div>
+                    
+                    <div class="w-7/12">
+                            <h1 class="mt-2 text-2xl text-yellow-500">Register Here</i></h1>
+
+                            <h2><input class="focus:outline-none pr-20 bg-gray-200 border-b-2 border-yellow-600 mt-8" type="text" name="user" placeholder="Enter name"></h2>
+                            <h2><input class="focus:outline-none pr-20 bg-gray-200 border-b-2 border-yellow-600 mt-8" type="email" name="mail" placeholder="Enter email"></h2>
+                            <h2><input class="focus:outline-none pr-20 bg-gray-200 border-b-2 border-yellow-600 mt-8" type="number" name="phone" placeholder="Enter phone number"></h2>
+                            <h2><input class="focus:outline-none pr-20 bg-gray-200 border-b-2 border-yellow-600 mt-8" type="password" name="password" placeholder="Enter password"></h2>
+
+                            <h1 class="text-xs mt-2">By signing up, you agree to Terms & conditions</h1>
+
+                            <button class="hover:bg-yellow-800 focus:outline-none py-1 px-12 bg-yellow-600 text-white rounded mt-8"><a href="dashboard.html">SIGN UP</a></button>
+                            <h1 class="text-xs mt-2">Not your first time here? <a class="text-yellow-600" href="login.html">Log In</a></h1>
+                        </div>
+                        
+
+                </div>
+
+
+
+      </div>
+    </div>
+    </div>
+
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
+      </script>
+</body>
+</html>
