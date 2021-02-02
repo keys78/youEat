@@ -245,3 +245,16 @@ html {
  .boardarea{
      width: 96%;
  }
+
+
+ .pie{
+    box-shadow: 2px 3px 28px 3px rgba(0,0,0,0.23);
+ }
+
+ .line{
+    box-shadow: 2px 3px 28px 3px rgba(0,0,0,0.23);
+ }
+ .combo{
+    box-shadow: 2px 3px 28px 3px rgba(0,0,0,0.23);
+ }
+ 
