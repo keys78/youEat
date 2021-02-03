@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>A sharwama procurent site</title>
+    <script src="https://kit.fontawesome.com/ebf196a24d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="youEat.css">
+
+
+</head>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    body::-webkit-scrollbar {
+  width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 9, 9);
+  outline: 1px solid slategrey;
+}
+
+</style>
+
+<body class="bg-blue-50">
+    <div class="container w-11/12 lg:w-11/12 m-auto sm:w-11/12 m-auto">
+
+ 
+    <div class="USERFLEXER flex justify-between items-start gap-4">
+
+        <div class="dashb bg-black w-3/12 fixed top-0 z-10 h-screen shadow-xl rounded-tl"data-aos="fade-right">
+
+
+            <div class="dashcontainer w-12/12 h-auto m-auto">
+
+                    <div class=" logo texts"data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1500">
+                        <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-4">YE!</h1> 
+                        <h1 class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
+                </div>
+                
+                <a href="dashboard.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
+                <a href="account.html"><h1 class="pb-5 pl-7 text-1xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-heart mt-8 mr-6"></i>Saved items</h1>
+                <a href="changepassword.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-lock mt-8 mr-6"></i>Change password</h1></a>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1>
+                <a href="login.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="OTHERAREA relative left-96 w-9/12 bg-white h-auto "data-aos="fade-up">
+
+
+            <div class="w-full flex justify-between items-center rounded-tr bg-black">
+
+
+                <div class="ml-40 border-blue-100 border-2 rounded-full bg-black focus:outline-none">
+                   <p><input class="outline-none focus:outline-none ml-2 bg-black w-96" type="text" name="search" placeholder="search items"><i class="text-yellow-600 fa fa-search"></i></p>
+                    
+                </div>
+                <div class="flex justify-between items-center">
+                    <i class="text-yellow-600 mr-6 fas fa-bell"></i>
+                    <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
+                    <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
+                    <p class="mr-6 text-white">Walter Brooks</p>
+                    <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
+                </div>
+           </div>
+
+                    <!---------------- WELCOME AREA--------------------->
+
+            <div class="welcomeflexer flex justify-between items-center bg-blue-100 pt-4">
+
+                <div class="welcome">
+                    <h2>Account settings</h2>
+                </div>
+                <div class="otherwelcome">
+                    <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
+                </div>
+
+            </div>
+
+
+            <!----------------   BOARD AREA ------------->
+
+    <div class=" h-screen">
+
+            <div class="INFOFLEX flex justify-between items-start gap-2 mt-10">
+
+                <div class="FIRSTAREA h-auto w-7/12 border border-current">
+
+                    <div class="containerr w-10/12 m-auto"> 
+
+                    <div class="AVATAR w-7/12 flex justify-between items-center mb-12">
+                        <div class="rounded-full w-32 bg-yellow-600"><img class=" rounded-full w-28" src="./aboutimages/uif.jpg"></div>
+                        <div class="flex buttonsremover">
+                        <h1 class="mx-4 cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Upload</h1>
+                        <h1 class="cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Remove</h1>
+                        </div>
+                    
+                    </div>
+
+                    <div class="INFOGRIDER w-6/12 grid grid-cols-2">
+
+                        <div class="">
+                            <p class="text-yellow-600 font-semibold">First Name</p>
+                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-7" type="text" name="surname" placeholder="Walter"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                    
+                        <div class="">
+                            <p class="text-yellow-600 font-semibold">Last Name</p>
+                            <h1><input class="py-1   focus:outline-none border-yellow-600 rounded border border-current pr-6" type="text" name="surname" placeholder="Brooks"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                    
+                        <div class="col-span-2 mt-4">
+                            <p class="text-yellow-600 font-semibold">Email</p>
+                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Ecodes@hotmail.com"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                        <div class="col-span-2 mt-4">
+                            <p class="text-yellow-600 font-semibold">Phone Number</p>
+                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="number" name="surname" placeholder="+234 810 8243 267"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                        <div class="col-span-2 mt-4">
+                            <p class="text-yellow-600 font-semibold">Delivery Default Address</p>
+                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Precious Lodge, Aluu. PH"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                        <div class="col-span-2 mt-4">
+                            <p class="text-yellow-600 font-semibold">Location</p>
+                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Rivers State"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                        </div>
+                    
+                       
+                    </div>
+                    <button class="ml-96 hover:bg-yellow-800 focus:outline-none py-1 px-4 bg-yellow-600 text-white rounded border border-current">+ SAVE</button>
+                    </div>
+                </div>
+
+                <div class="OTHERAREA w-5/12 items-center">
+                   <div class="border-yellow-600 border h-60 mb-4">
+                       <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Wallet Balance</h1>
+                       <p><i class="text-gray-600 fas fa-wallet">$53.7</i></p>
+                       
+                   </div>
+
+                   <div class="border-yellow-600 border h-60 mb-4">
+                       <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Link Socials</h1>
+                       <i class="fas fas-facebook"></i>
+                       
+                   </div>
+
+
+                   <div class="border-yellow-600 border h-60 mt-40">
+                       <h1 class=" text-2xl text-yellow-600 py-3 border-yellow-600 border-b-2">Newsletter Preferences</h1>
+                       <p>The first news broadcast of the year. Killer of all the newx</p>
+                       <p>Lorem ipsum dolor sit amet</p>
+                       <p>Lorem ipsum dolor sit amet</p>
+                       <p>Lorem ipsum dolor sit amet</p>
+                       
+                   </div>
+                   
+                </div>
+            
+            </div> 
+
+    <!--screen-->
+    </div>
+
+
+
+
+
+
+
+        <div class="bg-gray-800">
+            <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+
+        
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
+      </script>
+</body>
+</html>
