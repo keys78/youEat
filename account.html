@@ -100,13 +100,13 @@ body::-webkit-scrollbar-thumb {
 
             <!----------------   BOARD AREA ------------->
 
-    <div class=" h-screen">
+    <div class=" h-auto">
 
-            <div class="INFOFLEX flex justify-between items-start gap-2 mt-10">
+            <div class="INFOFLEX flex justify-between items-start gap-2 mt-10 m-auto w-11/12">
 
-                <div class="FIRSTAREA h-auto w-7/12 border border-current">
+                <div class="FIRSTAREA h-auto w-7/12 ">
 
-                    <div class="containerr w-10/12 m-auto"> 
+                    <div class="containerr w-12/12 m-auto"> 
 
                     <div class="AVATAR w-7/12 flex justify-between items-center mb-12">
                         <div class="rounded-full w-32 bg-yellow-600"><img class=" rounded-full w-28" src="./aboutimages/uif.jpg"></div>
@@ -124,10 +124,10 @@ body::-webkit-scrollbar-thumb {
                             <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-7" type="text" name="surname" placeholder="Walter"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
                         </div>
                     
-                        <div class="">
+                        <!-- <div class="">
                             <p class="text-yellow-600 font-semibold">Last Name</p>
                             <h1><input class="py-1   focus:outline-none border-yellow-600 rounded border border-current pr-6" type="text" name="surname" placeholder="Brooks"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
-                        </div>
+                        </div> -->
                     
                         <div class="col-span-2 mt-4">
                             <p class="text-yellow-600 font-semibold">Email</p>
@@ -148,25 +148,25 @@ body::-webkit-scrollbar-thumb {
                     
                        
                     </div>
-                    <button class="ml-96 hover:bg-yellow-800 focus:outline-none py-1 px-4 bg-yellow-600 text-white rounded border border-current">+ SAVE</button>
+                    <button class="ml-96 hover:bg-yellow-800 focus:outline-none py-1 px-4 bg-yellow-600 text-white rounded border border-current mt-4">+ SAVE</button>
                     </div>
                 </div>
 
-                <div class="OTHERAREA w-5/12 items-center">
-                   <div class="border-yellow-600 border h-60 mb-4">
+                <div class="OTHERAREA w-5/12 items-center ">
+                   <div class="border-yellow-600 border h-60 mb-4 ">
                        <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Wallet Balance</h1>
-                       <p><i class="text-gray-600 fas fa-wallet">$53.7</i></p>
+                       <p><i class="text-gray-600 text-2xl fas fa-wallet ml-6">$53.7</i></p>
                        
                    </div>
 
-                   <div class="border-yellow-600 border h-60 mb-4">
+                   <div class="border-yellow-600 border h-48 mb-4">
                        <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Link Socials</h1>
-                       <i class="fas fas-facebook"></i>
+                       <i class="fas fas-facebook-square"></i>
                        
                    </div>
 
 
-                   <div class="border-yellow-600 border h-60 mt-40">
+                   <div class="border-yellow-600 border h-48 ">
                        <h1 class=" text-2xl text-yellow-600 py-3 border-yellow-600 border-b-2">Newsletter Preferences</h1>
                        <p>The first news broadcast of the year. Killer of all the newx</p>
                        <p>Lorem ipsum dolor sit amet</p>
@@ -179,6 +179,20 @@ body::-webkit-scrollbar-thumb {
             
             </div> 
 
+
+                <div class="paycont m-auto w-11/12">
+            <div class=" border border-yellow-600 w-full h-32 my-12 ">
+                <h1 class="border-b-2 border-yellow-600 py-1">Payment Methods</h1>
+
+                <div class="payment flex justify-around items-center">
+                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-500 fab fa-cc-visa"></i>
+                <i class="text-3xl border border-yellow-600 py-4 px-12 mt-4 hover:bg-yellow-50 rounded text-red-500 fab fa-cc-mastercard"></i>
+                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-600 fab fa-cc-paypal"></i>
+                <button class="hover:bg-yellow-800 focus:outline-none py-1 px-8 bg-yellow-600 text-white rounded mt-4">+ ADD PAYMENT METHOD</button>
+                </div>
+
+            </div>
+           </div>
     <!--screen-->
     </div>
 

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>A sharwama procurent site</title>
+    <script src="https://kit.fontawesome.com/ebf196a24d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="youEat.css">
+
+
+</head>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    body::-webkit-scrollbar {
+  width: 0.8em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(252, 200, 59, 0.7);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 9, 9);
+  outline: 1px solid slategrey;
+}
+
+</style>
+
+<body class="bg-blue-50">
+    <div class="container w-11/12 lg:w-11/12 m-auto sm:w-11/12 m-auto">
+
+ 
+    <div class="USERFLEXER flex justify-between items-start gap-4">
+
+        <div class="dashb bg-black w-3/12 fixed top-0 z-10 h-screen shadow-xl rounded-tl"data-aos="fade-right">
+
+
+            <div class="dashcontainer w-12/12 h-auto m-auto">
+
+                    <div class=" logo texts"data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1500">
+                        <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-4">YE!</h1> 
+                        <h1 class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
+                </div>
+                
+                <a href="dashboard.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
+                <a href="account.html"><h1 class="pb-5 pl-7 text-1xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-heart mt-8 mr-6"></i>Saved items</h1>
+                <a href="changepassword.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-lock mt-8 mr-6"></i>Change password</h1></a>
+                <h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1>
+                <a href="login.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="OTHERAREA relative left-96 w-9/12 bg-white h-auto "data-aos="fade-up">
+
+
+            <div class="w-full flex justify-between items-center rounded-tr bg-black">
+
+
+                <div class="ml-40 border-blue-100 border-2 rounded-full bg-black focus:outline-none">
+                   <p><input class="outline-none focus:outline-none ml-2 bg-black w-96" type="text" name="search" placeholder="search items"><i class="text-yellow-600 fa fa-search"></i></p>
+                    
+                </div>
+                <div class="flex justify-between items-center">
+                    <i class="text-yellow-600 mr-6 fas fa-bell"></i>
+                    <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
+                    <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
+                    <p class="mr-6 text-white">Walter Brooks</p>
+                    <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
+                </div>
+           </div>
+
+                    <!---------------- WELCOME AREA--------------------->
+
+            <div class="welcomeflexer flex justify-between items-center bg-blue-100 pt-4">
+
+                <div class="welcome">
+                    <h2>Track Your Orders</h2>
+                </div>
+                <div class="otherwelcome">
+                    <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
+                </div>
+
+            </div>
+
+
+            <!----------------   BOARD AREA ------------->
+
+    <div class="h-auto">
+
+    <h1 class="text-1xl w-11/12 text-center text-gray-400 mt-6">View and edit your pending, delivered and cancelled orders here</h1>
+        
+    
+
+
+    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10">
+
+        <div class="containnner w-11/12 m-auto">
+
+           
+
+            <div class="ordersID grid grid-cols-4 py-6">
+
+                <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span>Order</span><span>#00741</span>
+                </div>
+
+                <p class="text-gray-600 col-span-2">Order placed Thu, 4th Feb 2021</p>
+
+                <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+            </div>
+
+            <div class="DIVIDE border-b border-yellow-600"></div>
+
+            <div class="MAINORDER grid grid-cols-4 py-6">
+
+                <div class="col-span-2 flex justify-between items-start">
+                    <img class="w-6/12" src="images/no2.jpg">
+                    
+                    <div class="w-6/12 ml-4">
+                        <p class="text-1xl font-bold text-gray-700 pb-8">Crunchy Hulk</p>
+                        <p>Size: J Qty:3 </p>
+                        <h1 class="text-yellow-600">$8.1</h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Status</p>
+                    <h1 class="bg-gray-200 py-1 px-6 text-white w-7/12 rounded animate-pulse">Pending</h1>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Delivery expected by</p>
+                    <h1 class="font-semibold">Thursday 6th February, 2021</h1>
+                    <h2>1300 Hours</h2>
+
+                </div>
+
+            </div>
+
+           
+
+            <!--contain-->
+        </div>
+
+        <div class="DIVIDE border-b border-yellow-600"></div>
+
+        <div class="CANCEL flex justify-between items-center py-4">
+            <h1 class="ml-6 bg-yellow-600 text-white hover:bg-yellow-800 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
+            <p class="mr-6 text-blue-300">Paid with youEat Wallet</p>
+        </div>
+
+        <!--0rders-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10">
+
+        <div class="containnner w-11/12 m-auto">
+
+           
+
+            <div class="ordersID grid grid-cols-4 py-6">
+
+                <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span>Order</span><span>#00741</span>
+                </div>
+
+                <p class="text-gray-600 col-span-2">Order placed Thu, 4th Feb 2021</p>
+
+                <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+            </div>
+
+            <div class="DIVIDE border-b border-yellow-600"></div>
+
+            <div class="MAINORDER grid grid-cols-4 py-6">
+
+                <div class="col-span-2 flex justify-between items-start">
+                    <img class="w-6/12" src="images/no2.jpg">
+                    
+                    <div class="w-6/12 ml-4">
+                        <p class="text-1xl font-bold text-gray-700 pb-8">Crunchy Hulk</p>
+                        <p>Size: J Qty:3 </p>
+                        <h1 class="text-yellow-600">$8.1</h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Status</p>
+                    <h1 class="bg-green-700 py-1 px-6 text-white w-7/12 rounded animate-pulse">Dispatched</h1>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Delivery expected by</p>
+                    <h1 class="font-semibold">Thursday 4th February, 2021</h1>
+                    <h2>1700 Hours</h2>
+
+                </div>
+
+            </div>
+
+           
+
+            <!--contain-->
+        </div>
+
+        <div class="DIVIDE border-b border-yellow-600"></div>
+
+        <div class="CANCEL flex justify-between items-center py-4">
+            <h1 class="ml-6 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
+            <p class="mr-6 text-blue-300">Paid using VISA credit</p>
+        </div>
+
+        <!--0rders-->
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10">
+
+            <div class="containnner w-11/12 m-auto">
+
+               
+
+                <div class="ordersID grid grid-cols-4 py-6">
+
+                    <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                    <span>Order</span><span>#00741</span>
+                    </div>
+
+                    <p class="text-gray-600 col-span-2">Order placed Thu, 4th Feb 2021</p>
+
+                    <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+                </div>
+
+                <div class="DIVIDE border-b border-yellow-600"></div>
+
+                <div class="MAINORDER grid grid-cols-4 py-6">
+
+                    <div class="col-span-2 flex justify-between items-start">
+                        <img class="w-6/12" src="images/no2.jpg">
+                        
+                        <div class="w-6/12 ml-4">
+                            <p class="text-1xl font-bold text-gray-700 pb-8">Crunchy Hulk</p>
+                            <p>Size: J Qty:3 </p>
+                            <h1 class="text-yellow-600">$8.1</h1>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <p class="text-xs text-gray-600">Status</p>
+                        <h1 class="bg-green-700 py-1 px-6 text-white w-7/12 rounded animate-pulse">Dispatched</h1>
+                    </div>
+
+                    <div class="">
+                        <p class="text-xs text-gray-600">Delivery expected by</p>
+                        <h1 class="font-semibold">Thursday 4th February, 2021</h1>
+                        <h2>1700 Hours</h2>
+
+                    </div>
+
+                </div>
+
+               
+
+                <!--contain-->
+            </div>
+
+            <div class="DIVIDE border-b border-yellow-600"></div>
+
+            <div class="CANCEL flex justify-between items-center py-4">
+                <h1 class="ml-6 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
+                <p class="mr-6 text-blue-300">Paid using VISA credit</p>
+            </div>
+
+            <!--0rders-->
+        </div>
+
+
+
+
+
+    <!--screen-->
+    </div>
+
+
+
+
+
+
+
+        <div class="bg-gray-800">
+            <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+
+        
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500
+        });
+      </script>
+</body>
+</html>
