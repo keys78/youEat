@@ -258,3 +258,128 @@ html {
     box-shadow: 2px 3px 28px 3px rgba(0,0,0,0.23);
  }
  
+
+
+
+ /********************************* PROBLEM SHOOTING AREA*******************************/
+ .fxtopnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .fxtopnav #fxmyLinks {
+    display: none;
+  }
+  
+  
+  .fxtopnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .fxtopnav a.fxicon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .fxactive {
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+  }
+  
+  
+
+
+
+
+  
+ .matopnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .matopnav #mamyLinks {
+    display: none;
+  }
+  
+  
+  .matopnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .matopnav a.maicon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .maactive {
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+  }
+  
+  
+  
+
+
+  
+ .pctopnav {
+    overflow: hidden;
+    background-color:rgb(247, 247, 247);
+    position: relative;
+  }
+  
+  
+  .pctopnav #mamyLinks {
+    display: none;
+  }
+  
+  
+  .pctopnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .pctopnav a.pcicon {
+    background:rgb(2, 2, 2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .pcactive {
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+  }
+  
+  
+  

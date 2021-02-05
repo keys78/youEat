@@ -73,4 +73,34 @@ function openNav() {
 
 
 
-  
+
+//************************************************TROUBLE SHOOT AREA*********** */
+function fxmyFunction() {
+    var x = document.getElementById("fxmyLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
+
+function mamyFunction() {
+    var x = document.getElementById("mamyLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
+function pcmyFunction() {
+    var x = document.getElementById("pcmyLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
