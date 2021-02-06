@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="youEat.css">
 
 
+
 </head>
 <style>
     html {
@@ -33,24 +34,17 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
+
 </style>
 
-<body class="bg-blue-50">
-    <div class="container w-11/12 lg:w-11/12 m-auto sm:w-11/12 m-auto">
-
- 
-    <div class="USERFLEXER flex justify-between items-start gap-4">
-
-        <div class="dashb bg-black w-3/12 fixed top-0 z-10 h-screen shadow-xl rounded-tl"data-aos="fade-right">
+<body class="md:bg-blue-100 bg-gray-700">
+    
+        
 
 
-            <div class="dashcontainer w-12/12 h-auto m-auto">
-
-                    <div class=" logo texts"data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1500">
-                        <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-4">YE!</h1> 
-                        <h1 class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
-                </div>
-                
+    <div class="md:hidden block mt-4 mx-2">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="dashboard.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
                 <a href="account.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
                 <a href="Orders.html"><h1 class="pb-5 pl-7 text-1xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1></a>
@@ -58,77 +52,129 @@ body::-webkit-scrollbar-thumb {
                 <a href="changepassword.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-lock mt-8 mr-6"></i>Change password</h1></a>
                 <a href="Help.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1></a>
                 <a href="login.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
+              </div>
+              
+              <div id="main"class="flex justify-between items-center">
+                    <a href="youEat.html"><div class=" logo texts"data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                        <h1 style="font-family: 'Dancing Script', cursive;" class="text-3xl text-yellow-500 animate-bounce">youEAT</h1>
+                    </div></a>
+
+
+                    <div class="mb-6 flex justify-between items-center ">
+
+                        <div class="">
+                            <a href="accounts.html"><i class="hover:text-yellow-700 mr-4 text-yellow-500 text-2xl fas fa-user"></i></a>
+                        </div>
+
+                        <div class="">
+                        <button class="openbtn text-base bg-yellow-500" onclick="openNav()" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">&#9776;</button>
+                        </div>
+
+                    </div>
+              </div>
+
+
+              
+              <div class="SEARCH w-full border border-blue-100 bg-gray-700 rounded-full mb-6 text-white">
+                <i class="mx-2 text-yellow-600 fas fa-search"></i><input class="focus:outline-none w-10/12 bg-gray-700" type="text" name="searchbar" placeholder="Search items">
+
+              </div>
+           
+    </div>
+       
+       
+
+    <!-----------------------------BIGGER SCREENS---------------------------------->
+    <div class="md:block hidden sidenav h-full lg:w-80 md:w-72 fixed z-10 top-0 left-0 bg-black overflow-x-hidden pt-3">
+
+        <div class="">
+            <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-2">YE!</h1> 
+            <h1 class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
+        </div>
+        
+
+        <a href="dashboard.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
+                <a href="account.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
+                <a href="Orders.html"><h1 class="pb-5 pl-7 text-xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1></a>
+                <a href="saved.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-heart mt-8 mr-6"></i>Saved items</h1></a>
+                <a href="changepassword.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-lock mt-8 mr-6"></i>Change password</h1></a>
+                <a href="Help.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1></a>
+                <a href="login.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
+      </div>
 
 
 
+
+
+
+        <!--------------------------------BOARD AREA----------------------------------------------------------->
+
+     <div class="BOARDAREA lg:ml-80 md:ml-72 py-0 px-1 bg-white">
+
+        <div class="md:flex hidden w-full flex justify-between items-center rounded-tr bg-black">
+
+
+            <div class="lg:ml-10 md:ml-4 lg:mr-0 md:mr-6 border-blue-100 border rounded-full bg-black w-64">
+               <p><input class="w-44 outline-none focus:outline-none ml-2 bg-black" type="text" name="search" placeholder="search items"><i class="text-yellow-600 fa fa-search"></i></p>
+                
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="text-yellow-600 mr-6 fas fa-bell"></i>
+                <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
+                <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
+                <p class="mr-6 text-white">Walter Brooks</p>
+                <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
+            </div>
+       </div>
+
+
+          <!---------------- WELCOME AREA--------------------->
+
+          <div class="welcomeflexer flex justify-between items-center md:bg-blue-100 bg-white pt-4">
+
+            <div class="welcome text-yellow-800 sm:text-lg text-base">
+                <h2>Track Your Orders</h2>
+            </div>
+            <div class="otherwelcome text-yellow-800 sm:text-lg text-base">
+                <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
             </div>
 
         </div>
 
-        <div class="OTHERAREA relative left-96 w-9/12 bg-white h-auto "data-aos="fade-up">
+        <!----------------------ORDER AREA--------------------->
+
+        <h1 class="sm:text-xl text-base w-11/12 text-center text-gray-400 mt-6">View and edit your pending, delivered and cancelled orders here</h1>
 
 
-            <div class="w-full flex justify-between items-center rounded-tr bg-black">
 
-
-                <div class="ml-40 border-blue-100 border-2 rounded-full bg-black focus:outline-none">
-                   <p><input class="outline-none focus:outline-none ml-2 bg-black w-96" type="text" name="search" placeholder="search items"><i class="text-yellow-600 fa fa-search"></i></p>
-                    
-                </div>
-                <div class="flex justify-between items-center">
-                    <i class="text-yellow-600 mr-6 fas fa-bell"></i>
-                    <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
-                    <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
-                    <p class="mr-6 text-white">Walter Brooks</p>
-                    <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
-                </div>
-           </div>
-
-                    <!---------------- WELCOME AREA--------------------->
-
-            <div class="welcomeflexer flex justify-between items-center bg-blue-100 pt-4">
-
-                <div class="welcome">
-                    <h2>Track Your Orders</h2>
-                </div>
-                <div class="otherwelcome">
-                    <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
-                </div>
-
-            </div>
-
-
-            <!----------------   BOARD AREA ------------->
-
-    <div class="h-auto ">
-
-    <h1 class="text-1xl w-11/12 text-center text-gray-400 mt-6">View and edit your pending, delivered and cancelled orders here</h1>
         
-    
-
-
-    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10 bg-gray-50">
+    <div class="ORDErS rounded border border-yellow-600 lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
 
         <div class="containnner w-11/12 m-auto">
 
            
 
-            <div class="ordersID grid grid-cols-4 py-6">
+            <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
 
-                <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
-                <span>Order</span><span>#00743</span>
+                <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#00743</span>
                 </div>
 
-                <p class="text-gray-600 col-span-2">Order placed Thu, 6th Feb 2021</p>
+                <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Thu, 6th Feb 2021</p>
 
-                <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+                <a href="https://www.samplesource.com/track.php"target="_blank"><button class=" lg:ml-4 ml-2 focus:outline-none w-full rounded-full py-1 px-2 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-1"></i>TRACK</button></a>
             </div>
 
             <div class="DIVIDE border-b border-yellow-600"></div>
 
-            <div class="MAINORDER grid grid-cols-4 py-6">
+            <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
 
-                <div class="col-span-2 flex justify-between items-start">
+                <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6" >
                     <img class="w-6/12" src="images/another.jpg">
                     
                     <div class="w-6/12 ml-4">
@@ -140,7 +186,7 @@ body::-webkit-scrollbar-thumb {
 
                 <div class="">
                     <p class="text-xs text-gray-600">Status</p>
-                    <h1 class="bg-gray-200 py-1 px-6 text-white w-7/12 rounded">Pending</h1>
+                    <h1 class="bg-gray-200 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded">Pending...</h1>
                 </div>
 
                 <div class="">
@@ -160,8 +206,8 @@ body::-webkit-scrollbar-thumb {
         <div class="DIVIDE border-b border-yellow-600"></div>
 
         <div class="CANCEL flex justify-between items-center py-4">
-            <h1 class="cursor-pointer ml-6 bg-yellow-600 text-white hover:bg-yellow-800 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
-            <p class="mr-6 text-blue-300">Paid with youEat Wallet</p>
+            <h1 class=" sm:text-lg text-sm cursor-pointer ml-6 bg-yellow-600 text-white hover:bg-yellow-800 border rounded border-yellow-600 sm:py-1 py-0 px-2">x CANCEL ORDER</h1>
+            <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid with youEat Wallet</p>
         </div>
 
         <!--0rders-->
@@ -170,34 +216,28 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10 bg-gray-50">
+    <div class="ORDErS rounded border border-yellow-600 lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
 
         <div class="containnner w-11/12 m-auto">
 
            
 
-            <div class="ordersID grid grid-cols-4 py-6">
+            <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
 
-                <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
-                <span>Order</span><span>#00742</span>
+                <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#00742</span>
                 </div>
 
-                <p class="text-gray-600 col-span-2">Order placed Thu, 4th Feb 2021</p>
+                <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Thu, 4th Feb 2021</p>
 
-                <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+                <a href="https://www.samplesource.com/track.php"target="_blank"><button class=" lg:ml-4 ml-2 focus:outline-none w-full rounded-full py-1 px-2 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-1"></i>TRACK</button></a>
             </div>
 
             <div class="DIVIDE border-b border-yellow-600"></div>
 
-            <div class="MAINORDER grid grid-cols-4 py-6">
+            <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
 
-                <div class="col-span-2 flex justify-between items-start">
+                <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6">
                     <img class="w-6/12" src="images/no9.jpg">
                     
                     <div class="w-6/12 ml-4">
@@ -209,7 +249,7 @@ body::-webkit-scrollbar-thumb {
 
                 <div class="">
                     <p class="text-xs text-gray-600">Status</p>
-                    <h1 class="bg-green-700 py-1 px-6 text-white w-7/12 rounded animate-pulse">Dispatched</h1>
+                    <h1 class="bg-green-700 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded animate-pulse">Dispatched</h1>
                 </div>
 
                 <div class="">
@@ -229,228 +269,79 @@ body::-webkit-scrollbar-thumb {
         <div class="DIVIDE border-b border-yellow-600"></div>
 
         <div class="CANCEL flex justify-between items-center py-4">
-            <h1 class="ml-6 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
-            <p class="mr-6 text-blue-300">Paid using VISA credit</p>
+            <h1 class=" sm:text-lg text-sm cursor-pointer ml-6 bg-yellow-600 text-white hover:bg-yellow-800 border rounded border-yellow-600 sm:py-1 py-0 px-2">x CANCEL ORDER</h1>
+            <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid with youEat Wallet</p>
         </div>
 
         <!--0rders-->
     </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10 bg-gray-50">
 
-            <div class="containnner w-11/12 m-auto">
 
-               
 
-                <div class="ordersID grid grid-cols-4 py-6">
 
-                    <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
-                    <span>Order</span><span>#00741</span>
-                    </div>
 
-                    <p class="text-gray-600 col-span-2">Order placed Thu, 4th Feb 2021</p>
 
-                    <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
+
+    
+    <div class="ORDErS rounded border border-yellow-600 lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
+
+        <div class="containnner w-11/12 m-auto">
+
+           
+
+            <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
+
+                <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#00741</span>
                 </div>
 
-                <div class="DIVIDE border-b border-yellow-600"></div>
+                <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Thu, 4th Feb 2021</p>
 
-                <div class="MAINORDER grid grid-cols-4 py-6">
-
-                    <div class="col-span-2 flex justify-between items-start">
-                        <img class="w-6/12" src="images/no2.jpg">
-                        
-                        <div class="w-6/12 ml-4">
-                            <p class="text-1xl font-bold text-gray-700 pb-8">Crunchy Hulk</p>
-                            <p>Size: J Qty:3 </p>
-                            <h1 class="text-yellow-600">$8.1</h1>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Status</p>
-                        <h1 class="bg-green-700 py-1 px-6 text-white w-7/12 rounded animate-pulse">Dispatched</h1>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Delivery expected by</p>
-                        <h1 class="font-semibold">Thursday 4th February, 2021</h1>
-                        <h2>1700 Hours</h2>
-
-                    </div>
-
-                </div>
-
-               
-
-                <!--contain-->
+                 <a href="https://www.samplesource.com/track.php"target="_blank"><button class=" lg:ml-4 ml-2 focus:outline-none w-full rounded-full py-1 px-2 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-1"></i>TRACK</button></a>
             </div>
 
             <div class="DIVIDE border-b border-yellow-600"></div>
 
-            <div class="CANCEL flex justify-between items-center py-4">
-                <h1 class="ml-6 border border-yellow-600 py-1 px-2">x CANCEL ORDER</h1>
-                <p class="mr-6 text-blue-300">Paid using VISA credit</p>
+            <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
+
+                <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6">
+                    <img class="w-6/12" src="images/no2.jpg">
+                    
+                    <div class="w-6/12 ml-4">
+                        <p class="text-1xl font-bold text-gray-700 pb-8">Crunchy Hulk</p>
+                        <p>Size: J Qty:3 </p>
+                        <h1 class="text-yellow-600">$8.1</h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Status</p>
+                    <h1 class="bg-green-700 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded animate-pulse">Dispatched</h1>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Delivery expected by</p>
+                    <h1 class="font-semibold">Thursday 4th February, 2021</h1>
+                    <h2>1700 Hours</h2>
+
+                </div>
+
             </div>
 
-            <!--0rders-->
+           
+
+            <!--contain-->
         </div>
 
+        <div class="DIVIDE border-b border-yellow-600"></div>
 
-
-
-        <div class="ORDErS rounded border border-yellow-600 w-11/12 m-auto mt-10 bg-gray-50">
-
-            <div class="containnner w-11/12 m-auto">
-
-               
-
-                <div class="ordersID grid grid-cols-4 py-6">
-
-                    <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
-                    <span>Order</span><span>#00740</span>
-                    </div>
-
-                    <p class="text-gray-600 col-span-2">Order placed Sun, 17th Jan 2021</p>
-
-                    <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
-                </div>
-
-                <div class="DIVIDE border-b border-yellow-600"></div>
-
-                <div class="MAINORDER grid grid-cols-4 py-6">
-
-                    <div class="col-span-2 flex justify-between items-start">
-                        <img class="w-6/12" src="images/no4.jpg">
-                        
-                        <div class="w-6/12 ml-4">
-                            <p class="text-1xl font-bold text-gray-700 pb-8">Sweet One</p>
-                            <p>Size: S Qty:5 </p>
-                            <h1 class="text-yellow-600">$12.50</h1>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Status</p>
-                        <h1 class="bg-yellow-500 py-1 px-6 text-white w-7/12 rounded">Delivered</h1>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Delivered</p>
-                        <h1 class="font-semibold">Thursday 17th January, 2021</h1>
-                        <h2>1400 Hours</h2>
-                        <p class="text-yellow-600 cursor-pointer">SEE DETAILS</p>
-
-                    </div>
-
-                </div>
-
-               
-
-                <!--contain-->
-            </div>
-
-            <div class="DIVIDE border-b border-yellow-600"></div>
-
-            <div class="CANCEL flex justify-between items-center py-4">
-                <h1 class=""></h1>
-                <p class="mr-6 text-blue-300">Paid using VISA credit</p>
-            </div>
-
-            <!--0rders-->
+        <div class="CANCEL flex justify-between items-center py-4">
+            <h1 class=" sm:text-lg text-sm cursor-pointer ml-6 bg-yellow-600 text-white hover:bg-yellow-800 border rounded border-yellow-600 sm:py-1 py-0 px-2">x CANCEL ORDER</h1>
+            <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid using VISA credit</p>
         </div>
 
-
-        <div class="hover:opacity-100 opacity-90 ORDErS rounded border border-yellow-600 w-11/12 m-auto my-10 bg-gray-50">
-
-            <div class="containnner w-11/12 m-auto">
-
-               
-
-                <div class="ordersID grid grid-cols-4 py-6">
-
-                    <div class="w-8/12 py-1 px6 rounded-full bg-yellow-100 flex justify-around items-center">
-                    <span>Order</span><span>#00739</span>
-                    </div>
-
-                    <p class="text-gray-600 col-span-2">Order placed Sun, 12th Jan 2021</p>
-
-                    <button class="ml-8 focus:outline-none w-10/12 rounded-full py-1 px-6 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-4"></i>TRACK ORDER</button>
-                </div>
-
-                <div class="DIVIDE border-b border-yellow-600"></div>
-
-                <div class="MAINORDER grid grid-cols-4 py-6">
-
-                    <div class="col-span-2 flex justify-between items-start">
-                        <img class="w-6/12" src="images/no6.jpg">
-                        
-                        <div class="w-6/12 ml-4">
-                            <p class="text-1xl font-bold text-gray-700 pb-8">Kings Bite</p>
-                            <p>Size: J Qty:1 </p>
-                            <h1 class="text-yellow-600">$6.2</h1>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Status</p>
-                        <h1 class="bg-yellow-500 py-1 px-6 text-white w-7/12 rounded">Delivered</h1>
-                    </div>
-
-                    <div class="">
-                        <p class="text-xs text-gray-600">Delivered</p>
-                        <h1 class="font-semibold">Thursday 12th January, 2021</h1>
-                        <h2>1900 Hours</h2>
-                        <p class="text-yellow-600 cursor-pointer">SEE DETAILS</p>
-
-                    </div>
-
-                </div>
-
-               
-
-                <!--contain-->
-            </div>
-
-            <div class="DIVIDE border-b border-yellow-600"></div>
-
-            <div class="CANCEL flex justify-between items-center py-4">
-                <h1 class=""></h1>
-                <p class="mr-6 text-blue-300">Paid using VISA credit</p>
-            </div>
-
-            <!--0rders-->
-        </div>
-
-
-       
-
-
-
-        
-
-
-
-
-
-    <!--screen-->
+        <!--0rders-->
     </div>
 
 
@@ -463,21 +354,151 @@ body::-webkit-scrollbar-thumb {
 
 
 
-    
 
 
-        <div class="bg-gray-800">
-            <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+    <div class="ORDErS rounded border border-yellow-600 lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
+
+        <div class="containnner w-11/12 m-auto">
+
+           
+
+            <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
+
+                <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#00740</span>
+                </div>
+
+                <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Sun, 17th Jan 2021</p>
+
+                 <a href="https://www.samplesource.com/track.php"target="_blank"><button class=" lg:ml-4 ml-2 focus:outline-none w-full rounded-full py-1 px-2 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-1"></i>TRACK</button></a>
+            </div>
+
+            <div class="DIVIDE border-b border-yellow-600"></div>
+
+            <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
+
+                <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6">
+                    <img class="w-6/12" src="images/no4.jpg">
+                    
+                    <div class="w-6/12 ml-4">
+                        <p class="text-1xl font-bold text-gray-700 pb-8">Sweet One</p>
+                        <p>Size: S Qty:5 </p>
+                        <h1 class="text-yellow-600">$12.50</h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Status</p>
+                    <h1 class="bg-yellow-500 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded">Delivered</h1>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Delivered</p>
+                    <h1 class="font-semibold">Thursday 17th January, 2021</h1>
+                    <h2>1400 Hours</h2>
+                    <p class="text-yellow-600 cursor-pointer">SEE DETAILS</p>
+
+                </div>
+
+            </div>
+
+           
+
+            <!--contain-->
         </div>
 
+        <div class="DIVIDE border-b border-yellow-600"></div>
 
+        <div class="CANCEL flex justify-between items-center py-4">
+            <h1 class=""></h1>
+            <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid using VISA credit</p>
         </div>
 
+        <!--0rders-->
     </div>
 
 
 
-        
+
+
+
+
+
+
+
+
+    <div class="hover:opacity-100 opacity-90 ORDErS rounded border border-yellow-600 lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
+
+        <div class="containnner w-11/12 m-auto">
+
+           
+
+            <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
+
+                <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-yellow-100 flex justify-around items-center">
+                <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#00739</span>
+                </div>
+
+                <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Sun, 12th Jan 2021</p>
+
+                 <a href="https://www.samplesource.com/track.php"target="_blank"><button class=" lg:ml-4 ml-2 focus:outline-none w-full rounded-full py-1 px-2 bg-yellow-600 text-white hover:bg-yellow-800"><i class="fas fa-map-pin pr-1"></i>TRACK</button></a>
+            </div>
+
+            <div class="DIVIDE border-b border-yellow-600"></div>
+
+            <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
+
+                <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6">
+                    <img class="w-6/12" src="images/no6.jpg">
+                    
+                    <div class="w-6/12 ml-4">
+                        <p class="text-1xl font-bold text-gray-700 pb-8">Kings Bite</p>
+                        <p>Size: J Qty:1 </p>
+                        <h1 class="text-yellow-600">$6.2</h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Status</p>
+                    <h1 class="bg-yellow-500 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded">Delivered</h1>
+                </div>
+
+                <div class="">
+                    <p class="text-xs text-gray-600">Delivered</p>
+                    <h1 class="font-semibold">Thursday 12th January, 2021</h1>
+                    <h2>1900 Hours</h2>
+                    <p class="text-yellow-600 cursor-pointer">SEE DETAILS</p>
+
+                </div>
+
+            </div>
+
+           
+
+            <!--contain-->
+        </div>
+
+        <div class="DIVIDE border-b border-yellow-600"></div>
+
+        <div class="CANCEL flex justify-between items-center py-4">
+            <h1 class=""></h1>
+            <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid using VISA credit</p>
+        </div>
+
+        <!--0rders-->
+    </div>
+
+
+
+
+
+  </div>
+  <div class="bg-gray-800">
+      <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+  </div>
+
+
+
 
     <script src="login.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
