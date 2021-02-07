@@ -104,3 +104,13 @@ function pcmyFunction() {
       x.style.display = "block";
     }
   }
+
+
+
+  AOS.init({
+    disable: function() {
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+    }
+  });
+  
