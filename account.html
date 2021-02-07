@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="youEat.css">
 
 
+
 </head>
 <style>
     html {
@@ -33,24 +34,17 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
+
 </style>
 
-<body class="bg-blue-50">
-    <div class="container w-11/12 lg:w-11/12 m-auto sm:w-11/12 m-auto">
-
- 
-    <div class="USERFLEXER flex justify-between items-start gap-4">
-
-        <div class="dashb bg-black w-3/12 fixed top-0 z-10 h-screen shadow-xl rounded-tl"data-aos="fade-right">
+<body class="md:bg-blue-100 bg-gray-700">
+    
+        
 
 
-            <div class="dashcontainer w-12/12 h-auto m-auto">
-
-                    <div class=" logo texts"data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1500">
-                        <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-4">YE!</h1> 
-                        <h1 class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
-                </div>
-                
+    <div class="md:hidden block mt-4 mx-2">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="dashboard.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
                 <a href="account.html"><h1 class="pb-5 pl-7 text-1xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
                 <a href="Orders.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1></a>
@@ -59,161 +53,230 @@ body::-webkit-scrollbar-thumb {
                 <a href="Help.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1></a>
                 <a href="login.html"><h1 class="pb-5 pl-7 text-1xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
 
+              </div>
+              
+              <div id="main"class="flex justify-between items-center">
+                    <a href="youEat.html"><div class=" logo texts"data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <span class="text-white bg-red-700 px-2 py-1 rounded">YE!</span>
+                        <h1 style="font-family: 'Dancing Script', cursive;" class="text-3xl text-yellow-500 animate-bounce">youEAT</h1>
+                    </div></a>
 
 
-            </div>
-
-        </div>
-
-        <div class="OTHERAREA relative left-96 w-9/12 bg-white h-auto "data-aos="fade-up">
-
-
-            <div class="w-full flex justify-between items-center rounded-tr bg-black">
-
-
-                <div class="ml-40 border-blue-100 border-2 rounded-full bg-black focus:outline-none">
-                   <p><input class="outline-none focus:outline-none ml-2 bg-black w-96" type="text" name="search" placeholder="search items"><i class="text-yellow-600 fa fa-search"></i></p>
-                    
-                </div>
-                <div class="flex justify-between items-center">
-                    <i class="text-yellow-600 mr-6 fas fa-bell"></i>
-                    <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
-                    <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
-                    <p class="mr-6 text-white">Walter Brooks</p>
-                    <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
-                </div>
-           </div>
-
-                    <!---------------- WELCOME AREA--------------------->
-
-            <div class="welcomeflexer flex justify-between items-center bg-blue-100 pt-4">
-
-                <div class="welcome">
-                    <h2>Account settings</h2>
-                </div>
-                <div class="otherwelcome">
-                    <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
-                </div>
-
-            </div>
-
-
-            <!----------------   BOARD AREA ------------->
-
-    <div class=" h-auto">
-
-            <div class="INFOFLEX flex justify-between items-start gap-2 mt-10 m-auto w-11/12">
-
-                <div class="FIRSTAREA h-auto w-7/12 ">
-
-                    <div class="containerr w-12/12 m-auto"> 
-
-                    <div class="AVATAR w-7/12 flex justify-between items-center mb-12">
-                        <div class="rounded-full w-32 bg-yellow-600"><img class=" rounded-full w-28" src="./aboutimages/uif.jpg"></div>
-                        <div class="flex buttonsremover">
-                        <h1 class="mx-4 cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Upload</h1>
-                        <h1 class="cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Remove</h1>
-                        </div>
-                    
-                    </div>
-
-                    <div class="INFOGRIDER w-6/12 grid grid-cols-2">
+                    <div class="mb-6 flex justify-between items-center ">
 
                         <div class="">
-                            <p class="text-yellow-600 font-semibold">First Name</p>
-                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-7" type="text" name="surname" placeholder="Walter"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                            <a href="accounts.html"><i class="hover:text-yellow-700 mr-4 text-yellow-500 text-2xl fas fa-user"></i></a>
                         </div>
-                    
-                        <!-- <div class="">
-                            <p class="text-yellow-600 font-semibold">Last Name</p>
-                            <h1><input class="py-1   focus:outline-none border-yellow-600 rounded border border-current pr-6" type="text" name="surname" placeholder="Brooks"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
-                        </div> -->
-                    
-                        <div class="col-span-2 mt-4">
-                            <p class="text-yellow-600 font-semibold">Email</p>
-                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Ecodes@hotmail.com"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+
+                        <div class="">
+                        <button class="openbtn text-base bg-yellow-500" onclick="openNav()" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">&#9776;</button>
                         </div>
-                        <div class="col-span-2 mt-4">
-                            <p class="text-yellow-600 font-semibold">Phone Number</p>
-                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="number" name="surname" placeholder="+234 810 8243 267"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
-                        </div>
-                        <div class="col-span-2 mt-4">
-                            <p class="text-yellow-600 font-semibold">Delivery Default Address</p>
-                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Precious Lodge, Aluu. PH"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
-                        </div>
-                        <div class="col-span-2 mt-4">
-                            <p class="text-yellow-600 font-semibold">Location</p>
-                            <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current pr-72" type="text" name="surname" placeholder="Rivers State"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
-                        </div>
-                    
-                       
+
                     </div>
-                    <button class="ml-96 hover:bg-yellow-800 focus:outline-none py-1 px-4 bg-yellow-600 text-white rounded border border-current mt-4">+ SAVE</button>
-                    </div>
-                </div>
-
-                <div class="OTHERAREA w-5/12 items-center ">
-                   <div class="border-yellow-600 border h-60 mb-4 ">
-                       <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Wallet Balance</h1>
-                       <p><i class="text-gray-600 text-2xl fas fa-wallet ml-6">$53.7</i></p>
-                       
-                   </div>
-
-                   <div class="border-yellow-600 border h-48 mb-4">
-                       <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Link Socials</h1>
-                       <i class="fas fas-facebook-square"></i>
-                       
-                   </div>
+              </div>
 
 
-                   <div class="border-yellow-600 border h-48 ">
-                       <h1 class=" text-2xl text-yellow-600 py-3 border-yellow-600 border-b-2">Newsletter Preferences</h1>
-                       <p>The first news broadcast of the year. Killer of all the newx</p>
-                       <p>Lorem ipsum dolor sit amet</p>
-                       <p>Lorem ipsum dolor sit amet</p>
-                       <p>Lorem ipsum dolor sit amet</p>
-                       
-                   </div>
-                   
-                </div>
+              
+              <div class="SEARCH w-full border border-blue-100 bg-gray-700 rounded-full mb-6 text-white">
+                <i class="mx-2 text-yellow-600 fas fa-search"></i><input class="focus:outline-none w-10/12 bg-gray-700" type="text" name="searchbar" placeholder="Search items">
+
+              </div>
+           
+    </div>
+       
+       
+
+    <!-----------------------------BIGGER SCREENS---------------------------------->
+    <div class="md:block hidden sidenav h-full lg:w-80 md:w-72 fixed z-10 top-0 left-0 bg-black overflow-x-hidden pt-3">
+
+        <div class="">
+            <h1 class="ml-12 text-white bg-red-700 px-2 py-1 w-10 rounded my-2">YE!</h1> 
+            <h1 style="font-family: 'Dancing Script', cursive;" class="pl-7 text-3xl text-yellow-600 animate-bounce">youEAT</h1>  
+        </div>
+        
+
+        <a href="dashboard.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
+                <a href="account.html"><h1 class="pb-5 pl-7 text-xl border-b-2 border-gray-300 bg-yellow-500 text-white"><i class="fas fa-holly-berry mt-8 mr-6"></i>My youEat account</h1></a>
+                <a href="Orders.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-hotdog mt-8 mr-6"></i>My Orders</h1></a>
+                <a href="saved.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-heart mt-8 mr-6"></i>Saved items</h1></a>
+                <a href="changepassword.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-lock mt-8 mr-6"></i>Change password</h1></a>
+                <a href="Help.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="far fa-question-circle mt-8 mr-6"></i>Help</h1></a>
+                <a href="login.html"><h1 class="pb-5 pl-7 text-xl text-gray-500 border-b-2 border-gray-300 hover:bg-yellow-500 hover:text-white"><i class="fas fa-sign-out-alt mt-8 mr-6"></i>Logout</h1></a>
+
+      </div>
+
+
+
+
+
+
+        <!--------------------------------BOARD AREA----------------------------------------------------------->
+
+     <div class="BOARDAREA lg:ml-80 md:ml-72 py-0 px-1 bg-white">
+
+        <div class="md:flex hidden w-full flex justify-between items-center rounded-tr bg-black">
+
+
+            <div class="lg:ml-10 md:ml-4 lg:mr-0 md:mr-6 border-blue-100 border rounded-full bg-black w-64">
+               <p><i class="text-yellow-600 fa fa-search mx-2"></i><input class="w-36 outline-none focus:outline-none ml-2 bg-black" type="text" name="search" placeholder="search items"></i></p>
+                
+            </div>
             
-            </div> 
+            <div class="flex justify-between items-center">
+                <i class="text-yellow-600 mr-6 fas fa-bell"></i>
+                <i class="text-yellow-600 mr-6 fas fa-comment-alt"></i>
+                <img class="mr-6 rounded-full w-10" src="./aboutimages/uif.jpg">
+                <p class="mr-6 text-white">Walter Brooks</p>
+                <i class="text-yellow-600 mr-8 fas fa-sort-down"></i>
+            </div>
+       </div>
 
 
-                <div class="paycont m-auto w-11/12">
-            <div class=" border border-yellow-600 w-full h-32 my-12 ">
-                <h1 class="border-b-2 border-yellow-600 py-1">Payment Methods</h1>
+          <!---------------- WELCOME AREA--------------------->
 
-                <div class="payment flex justify-around items-center">
-                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-500 fab fa-cc-visa"></i>
-                <i class="text-3xl border border-yellow-600 py-4 px-12 mt-4 hover:bg-yellow-50 rounded text-red-500 fab fa-cc-mastercard"></i>
-                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-600 fab fa-cc-paypal"></i>
-                <button class="hover:bg-yellow-800 focus:outline-none py-1 px-8 bg-yellow-600 text-white rounded mt-4">+ ADD PAYMENT METHOD</button>
+          <div class="welcomeflexer flex justify-between items-center md:bg-blue-100 bg-white pt-4">
+
+            <div class="welcome text-yellow-800 sm:text-lg text-base">
+                <h2>Your account settings here</h2>
+            </div>
+            <div class="otherwelcome text-yellow-800 sm:text-lg text-base">
+                <p><a class="hover:text-yellow-600" href="youeat.html">Home</a></p>
+            </div>
+
+        </div>
+
+
+
+
+        <!---------------------- ACCOUNT SETTINGS--------------------->
+
+
+
+        <div class="lg:flex-row flex-col flex justify-around items-center mt-8">
+                
+            <div class="AST border py-12  lg:w-6/12 w-full">
+              <div class="containerrer w-11/12 m-auto">
+                <div class="AVATAR w-full flex justify-between items-center">
+                    <div class="rounded-full w-32 h-32 bg-yellow-600"><img class=" rounded-full w-28" src="./aboutimages/uif.jpg"></div>
+                    <div class="flex buttonsremover">
+                    <h1 class="mx-4 cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Upload</h1>
+                    <h1 class="cursor-pointer rounded text-yellow-600 border-2 py-1 px-4 border-yellow-600 hover:bg-yellow-600 hover:text-white">Remove</h1>
+                    </div>
+                
+                </div>
+
+
+
+                <div class="INFOFLEX grid grid-cols-2 gap-4 w-full mt-6">
+
+                    <div class="">
+                        <p class="text-yellow-600 font-semibold">First Name</p>
+                        <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current w-10/12" type="text" name="surname" placeholder="Walter"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+                
+                    <div class="">
+                        <p class="text-yellow-600 font-semibold">Last Name</p>
+                        <h1><input class="py-1   focus:outline-none border-yellow-600 rounded border border-current w-10/12" type="text" name="surname" placeholder="Brooks"><i class="cursor-pointer ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+                
+                    <div class="col-span-2 mt-4">
+                        <p class="text-yellow-600 font-semibold">Email</p>
+                        <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current w-11/12" type="text" name="surname" placeholder="Ecodes@hotmail.com"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+                    <div class="col-span-2 mt-4">
+                        <p class="text-yellow-600 font-semibold">Phone Number</p>
+                        <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current w-11/12" type="number" name="surname" placeholder="+234 810 8243 267"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+                    <div class="col-span-2 mt-4">
+                        <p class="text-yellow-600 font-semibold">Delivery Default Address</p>
+                        <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current w-11/12" type="text" name="surname" placeholder="Precious Lodge, Aluu. PH"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+                    <div class="col-span-2 mt-4">
+                        <p class="text-yellow-600 font-semibold">Location</p>
+                        <h1><input class="py-1 focus:outline-none border-yellow-600 rounded border border-current w-11/12" type="text" name="surname" placeholder="Rivers State"><i class="cursor-pointer py-1 ml-2 hover:text-red-500 text-yellow-600 fas fa-pen"></i></h1>
+                    </div>
+            
+
+
+                </div>
+
+
+                
+                    <div>
+                    <button class="hover:bg-yellow-800 focus:outline-none py-1 px-4 bg-yellow-600 text-white rounded border border-current mt-4">+ SAVE</button>
+                    </div>
+
                 </div>
 
             </div>
-           </div>
-    <!--screen-->
-    </div>
 
 
+            <div class="OTHERFLEX py-4 lg:w-5/12 w-11/12 items-start">
+
+                <div class="AST h-36 mb-4">
+                    <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Wallet Balance</h1>
+                    <p><i class="ml-2 mt-2 text-yellow-600 text-xl fas fa-wallet">$53.7</i></p>
+                    
+                </div>
+
+                <div class="AST h-56 mb-4">
+                    <h1 class="text-yellow-600 py-3 border-yellow-600 border-b-2">Link Socials</h1>
+
+                    <i class="text-2xl text-yellow-500 fab fa-facebook-square"> </i>
+                    <i class="text-2xl text-yellow-500 fab fa-twitter-square"></i>
+                    <i class="text-2xl text-yellow-500 fab fa-github-square"></i>
+                    <i class="text-2xl text-yellow-500 fas fa-laptop-code"></i>
+
+                    <h1><input class="rounded w-full mt-2 border border-yellow-600 " type="text"name="social" placeholder="https://web.facebook.com/login/web/?_rdc=1&_rdr"></h1>
+                    <h1><input class="rounded w-full mt-2 border border-yellow-600 " type="text"name="social" placeholder="https://web.twitter.com/login/web/?_rdc=1&_rdr"> </h1>
+                    <h1><input class="rounded w-full mt-2 border border-yellow-600 " type="text"name="social" placeholder="https://web.github.com/login/web/?_rdc=1&_rdr"></h1>
+                    <h1><input class="rounded w-full mt-2 border border-yellow-600 " type="text"name="social" placeholder="https://web.emcodes.com/login/web/?_rdc=1&_rdr"> </h1>
+                
+                    
+                </div>
 
 
+                <div class="AST h-60">
+                    <h1 class=" text-2xl text-yellow-600 py-3 border-yellow-600 border-b-2">Newsletter Preferences</h1>
+                    <p class="ml-2">first news broadcast of the year. Killer bites</p>
+                    <p class="ml-2">Lorem ipsum dolor sit amet</p>
+                    <p class="ml-2">Lorem ipsum dolor sit amet</p>
+                    <p class="ml-2">Lorem ipsum dolor sit amet</p>
+                    
+                </div>
 
 
+            </div>
 
-        <div class="bg-gray-800">
-            <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+
+            <!--ALLflex-->
         </div>
-
-
-        </div>
-
-    </div>
-
 
 
         
+            <div class="AST borde border-yellow-600 w-full m-auto sm:h-32 h-auto mt-12 ">
+                <h1 class="border-b-2 border-yellow-600 py-1 text-xl text-gray-500">Payment Methods</h1>
+
+                <div class="payment sm:flex justify-around items-center grid grid-cols-2">
+                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-500 fab fa-cc-visa"></i>
+                <i class="text-3xl border border-yellow-600 py-4 px-12 mt-4 hover:bg-yellow-50 rounded text-red-500 fab fa-cc-mastercard"></i>
+                <i class="text-3xl border border-blue-600 py-4 px-12 mt-4 hover:bg-blue-50 rounded text-blue-600 fab fa-cc-paypal"></i>
+                <button class="sm:w-16 w-16 hover:bg-yellow-800 focus:outline-none py-1 px-2 bg-yellow-600 text-white rounded mt-4">+ ADD</button>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="bg-gray-800">
+                <p class="text-center text-gray-400">Copyright &copy; 2020, www.emcodes.com | Designed By Em_codes</p>
+            </div>
+
 
     <script src="login.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
